@@ -1,2 +1,5 @@
 class Team < ApplicationRecord
-end
+    has_many :players, dependent: :destroy
+    has_many :matches, dependent: :destroy
+    
+end 
